@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>Hello,JavaEE!</h1>
+</body>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.ajax({
+            url : "../params/index",
+            data : {roleData : "index"},
+            dataType : 'json',
+            type : 'POST',
+            success : function(data){
+
+            }
+        });
+    })
+</script>
+</html>
